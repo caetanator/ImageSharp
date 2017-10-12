@@ -170,7 +170,7 @@ namespace SixLabors.ImageSharp.Formats.Bmp
 
                             break;
                         case BmpCompression.RLE8:
-                            this.ReadRle8(pixels, palette, this.infoHeader.Width, this.infoHeader.Height, inverted);
+                            this.ReadRle8(pixels, palette, this.infoHeader.Width, this.infoHeader.Height, this.infoHeader.IsTopDown);
 
                             break;
                         default:
